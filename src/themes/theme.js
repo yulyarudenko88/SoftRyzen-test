@@ -1,21 +1,26 @@
 export const theme = {
   colors: {
-    primaryColor: '#173D33',
-    accentColor: '#97D28B',
-    whiteColor: '#fff',
-    backgroundColor: '#F3F5FA',
-    secondaryBGColor: '#EAEDF1',
-    btnBGColor: '#DCEFD8',
-    mobileMenuBGColor: 'rgba(23, 61, 51, 0.75)',
-    headerBGColor: '#fff',
-    backdropColor: 'rgba(23, 61, 51, 0.25)',
-    primaryTextColor: '#173D33',
-    secondaryTextColor: 'rgba(255, 255, 255, 0.25)',
+    primaryColor: "#173D33",
+    accentColor: "#97D28B",
+    whiteColor: "#fff",
+    backgroundColor: "#F3F5FA",
+    secondaryBGColor: "#EAEDF1",
+    btnBGColor: "#DCEFD8",
+    mobileMenuBGColor: "rgba(23, 61, 51, 0.75)",
+    headerBGColor: "#fff",
+    backdropColor: "rgba(23, 61, 51, 0.25)",
+    primaryTextColor: "#173D33",
+    secondaryTextColor: "rgba(255, 255, 255, 0.25)",
   },
 
   transforms: {
-    transitionDuration: '250ms',
-    timingFunction: 'cubic-bezier(0.4, 0, 0.2, 1)',
+    transitionDuration: "250ms",
+    timingFunction: "cubic-bezier(0.4, 0, 0.2, 1)",
+  },
+
+  fontFamilies: {
+    mainFontFamily: "Montserrat, sans-serif",
+    secondFontFamily: "Antic, sans-serif",
   },
 
   fontWeights: {
@@ -42,8 +47,8 @@ export const theme = {
   // },
 
   borders: {
-    line: '1px solid #97D28B',
-    primaryBtn: '1px solid #173D33',
-    secondaryBtn: '1px solid #97D28B',
+    line: "1px solid #97D28B",
+    primaryBtn: "1px solid #173D33",
+    secondaryBtn: "1px solid #97D28B",
   },
 };
