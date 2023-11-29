@@ -1,4 +1,4 @@
-export const theme = {
+const theme = {
   colors: {
     primaryColor: "#173D33",
     accentColor: "#97D28B",
@@ -16,11 +16,14 @@ export const theme = {
   transforms: {
     transitionDuration: "250ms",
     timingFunction: "cubic-bezier(0.4, 0, 0.2, 1)",
+    all: 'all 250ms cubic-bezier(0.4, 0, 0.2, 1)',
   },
 
   fontFamilies: {
     paragraphsFontFamily: "Fira Sans, sans-serif",
     headersFontFamily: "Oswald, sans-serif",
+    logoFontFamily: "Montserrat, sans-serif",
+    logoSpanFontFamily: "Raleway, sans-serif",
   },
 
   fontWeights: {
@@ -52,3 +55,5 @@ export const theme = {
     secondaryBtn: "1px solid #97D28B",
   },
 };
+
+export default theme;
