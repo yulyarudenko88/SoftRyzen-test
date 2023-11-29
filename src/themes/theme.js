@@ -19,8 +19,8 @@ export const theme = {
   },
 
   fontFamilies: {
-    mainFontFamily: "Montserrat, sans-serif",
-    secondFontFamily: "Antic, sans-serif",
+    paragraphsFontFamily: "Fira Sans, sans-serif",
+    headersFontFamily: "Oswald, sans-serif",
   },
 
   fontWeights: {
