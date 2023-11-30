@@ -16,7 +16,7 @@ const theme = {
   transforms: {
     transitionDuration: "250ms",
     timingFunction: "cubic-bezier(0.4, 0, 0.2, 1)",
-    all: 'all 250ms cubic-bezier(0.4, 0, 0.2, 1)',
+    all: "all 250ms cubic-bezier(0.4, 0, 0.2, 1)",
   },
 
   fontFamilies: {
@@ -50,7 +50,8 @@ const theme = {
   // },
 
   borders: {
-    line: "1px solid #97D28B",
+    primaryLine: "1px solid #97D28B",
+    secondaryLine: "1px solid #FFF",
     primaryBtn: "1px solid #173D33",
     secondaryBtn: "1px solid #97D28B",
   },
