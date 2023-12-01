@@ -9,7 +9,7 @@ import MainBtn from "../MainBtn/MainBtn.jsx";
 
 const MainSection = () => {
   return (
-    <section>
+    <section style={{paddingTop: '100px'}}>
       <h1>RENEWABLE ENERGY For any task</h1>
       <p>
         Development and implementation of renewable non-polluting energy
