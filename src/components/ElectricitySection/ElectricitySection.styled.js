@@ -37,6 +37,7 @@ export const Counter = styled.p`
     position: absolute;
     top: 24px;
     left: 50%;
+    z-index: -5;
     width: 1px;
     height: 48px;
     background-color: ${({ theme }) => theme.colors.accentColor};
