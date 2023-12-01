@@ -23,6 +23,7 @@ export const Counter = styled.p`
   gap: 8px;
   padding-top: 96px;
   position: relative;
+  z-index: -5;
 
   span {
     color: ${({ theme }) => theme.colors.primaryTextColor};
