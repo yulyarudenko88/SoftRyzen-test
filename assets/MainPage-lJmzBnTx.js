@@ -1,4 +1,4 @@
-import{n as o,P as l,j as t,s as j,C as d,r as g}from"./index-lTxUr2w-.js";const C=o.button`
+import{n as o,P as l,j as t,s as j,C as d,r as g}from"./index-M0JfH49o.js";const C=o.button`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -140,6 +140,7 @@ import{n as o,P as l,j as t,s as j,C as d,r as g}from"./index-lTxUr2w-.js";const
     position: absolute;
     top: 24px;
     left: 50%;
+    z-index: -5;
     width: 1px;
     height: 48px;
     background-color: ${({theme:e})=>e.colors.accentColor};

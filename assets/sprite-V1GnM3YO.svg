@@ -72,5 +72,10 @@
 <symbol id="icon-close" viewBox="0 0 32 32">
 <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.4" d="M9.333 9.333l13.333 13.333M9.333 22.667l13.333-13.333"></path>
 </symbol>
+<symbol id="icon-arrow-card" viewBox="0 0 32 32">
+<path fill="#97d28b" style="fill: var(--color1, #97d28b)" d="M16 0c8.837 0 16 7.163 16 16s-7.163 16-16 16c-8.837 0-16-7.163-16-16s7.163-16 16-16z"></path>
+<path fill="none" stroke="#173d33" style="stroke: var(--color2, #173d33)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="0.8" d="M14.399 12.26h5.341v5.341"></path>
+<path fill="none" stroke="#173d33" style="stroke: var(--color2, #173d33)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="0.8" d="M12.261 19.739l7.405-7.405"></path>
+</symbol>
 </defs>
 </svg>
