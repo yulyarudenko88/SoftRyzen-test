@@ -6,4 +6,5 @@ export const Title = styled.h2`
   font-weight: ${({ theme }) => theme.fontWeights.regular};
   line-height: 1;
   text-transform: uppercase;
+  text-align: ${(props) => props.textAlign};
 `;
