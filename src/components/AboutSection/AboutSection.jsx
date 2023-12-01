@@ -1,12 +1,34 @@
 import Container from "../Container/Container.jsx";
 import SectionTitle from "../SectionTitle/SectionTitle.jsx";
 // import MainBtn from "../MainBtn/MainBtn.jsx";
-import { Section, Desc } from "./AboutSection.styled.js";
+import { Section, Picture, Desc } from "./AboutSection.styled.js";
+
+import MobileWindTurbine from "../../assets/images/AboutSection/mobile_wind-turbine.jpg";
+import MobileWindTurbineRetina from "../../assets/images/AboutSection/mobile_wind-turbine@2x.jpg";
+import TabletWindTurbine from "../../assets/images/AboutSection/tablet_wind-turbine.jpg";
+import TabletWindTurbineRetina from "../../assets/images/AboutSection/tablet_wind-turbine@2x.jpg";
+import DesktopWindTurbine from "../../assets/images/AboutSection/desktop_wind-turbine.jpg";
+import DesktopWindTurbineRetina from "../../assets/images/AboutSection/desktop_wind-turbine@2x.jpg";
 
 const AboutSection = () => {
   return (
     <Section>
       <Container>
+        <Picture>
+          <source
+            media="(min-width: 1280px)"
+            srcSet={`${DesktopWindTurbine}, ${DesktopWindTurbineRetina} 2x`}
+          />
+          <source
+            media="(min-width: 768px)"
+            srcSet={`${TabletWindTurbine}, ${TabletWindTurbineRetina} 2x`}
+          />
+          <img
+            src={MobileWindTurbine}
+            srcSet={`${MobileWindTurbine}, ${MobileWindTurbineRetina} 2x`}
+            alt="Wind turbine - clean energy"
+          />
+        </Picture>
         <SectionTitle>Main values of our company</SectionTitle>
         <Desc>
           EcoSolution envisions a world where sustainable energy solutions power
