@@ -1,37 +1,41 @@
 import PropTypes from "prop-types";
 import RoundBtn from "../RoundBtn/RoundBtn.jsx";
-// import { Title } from "./SliderCard.styled";
+import { Thumb, TitleWrap, Title, DescWrap } from "./SliderCard.styled";
 import sprite from "../../assets/images/sprite.svg";
 
-import WindTurbine from "../../assets/images/CasesSection/wind-turbines.jpg";
-import WindTurbineRetina from "../../assets/images/CasesSection/wind-turbines@2x.jpg";
-
-const SliderCard = ({
-  src,
-  srcRetina,
-  title,
-  shortDesc,
-  time,
-}) => {
+const SliderCard = ({ src, srcRetina, title, shortDesc, time }) => {
   return (
     <li>
       <img src={src} srcSet={`${src}, ${srcRetina} 2x`} alt={title} />
-      <div>
-        <div>
-          <h3>{title}</h3>
+      <Thumb>
+        <TitleWrap>
+          <Title>{title}</Title>
           <RoundBtn
             type="button"
-            SvgWidth={16}
-            SvgHeight={16}
+            SvgWidth={28}
+            SvgHeight={28}
             spritePath={sprite}
-            iconName="icon-menu"
+            iconName="icon-arrow-card"
+            width="60px"
+            height="60px"
+            padding={{
+              paddingTop: "16px",
+              paddingBottom: "16px",
+              paddingLeft: "16px",
+              paddingRight: "16px",
+            }}
+            bgColor="#97D28B"
+            hoverStyles={{
+              styleFirst: "background-color ",
+            }}
+            hoverParams={{ paramFirst: "#173D33" }}
           />
-        </div>
-        <div>
+        </TitleWrap>
+        <DescWrap>
           <p>{shortDesc}</p>
           <p>{time}</p>
-        </div>
-      </div>
+        </DescWrap>
+      </Thumb>
     </li>
   );
 };
@@ -45,4 +49,3 @@ SliderCard.propTypes = {
 };
 
 export default SliderCard;
-
