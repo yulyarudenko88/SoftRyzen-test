@@ -22,7 +22,7 @@ export const MainHeader = styled.h1`
 export const Desc = styled.p`
   font-size: 16px;
   font-weight: ${({ theme }) => theme.fontWeights.regular};
-  line-height: 1;
+  line-height: 1.1875;
   letter-spacing: -0.64px;
   text-align: justify;
 
