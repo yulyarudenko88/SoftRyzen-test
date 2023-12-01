@@ -1,6 +1,7 @@
+
 const SliderCard = () => {
   return <ul>
-    
+
   </ul>;
 };
 
