@@ -1,6 +1,9 @@
 import { slides } from "../../assets/data/sliders.js";
 import SliderCard from "../SliderCard/SliderCard.jsx";
 
+import WindTurbine from "../../assets/images/CasesSection/wind-turbines.jpg";
+import WindTurbineRetina from "../../assets/images/CasesSection/wind-turbines@2x.jpg";
+
 const SliderGallery = () => {
   return (
     <ul>

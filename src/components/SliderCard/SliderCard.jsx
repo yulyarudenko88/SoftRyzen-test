@@ -7,8 +7,8 @@ import WindTurbine from "../../assets/images/CasesSection/wind-turbines.jpg";
 import WindTurbineRetina from "../../assets/images/CasesSection/wind-turbines@2x.jpg";
 
 const SliderCard = ({
-  src = { WindTurbine },
-  srcRetina = { WindTurbineRetina },
+  src,
+  srcRetina,
   title,
   shortDesc,
   time,
