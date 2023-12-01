@@ -262,7 +262,7 @@ Error generating stack: `+o.message+`
   flex-direction: column;
 `,Lv=ee.main`
   flex: 1 1 auto;
-`,zv=()=>C.jsxs(Nv,{children:[C.jsx(Rv,{}),C.jsx(Lv,{children:C.jsx(R.Suspense,{fallback:C.jsx("div",{children:"Loading..."}),children:C.jsx(lm,{})})})]}),Ov=R.lazy(()=>fm(()=>import("./MainPage-stn1RhYH.js"),__vite__mapDeps([])));function jv(){return C.jsx(nv,{theme:rv,children:C.jsx(im,{children:C.jsxs(ll,{path:"/",element:C.jsx(zv,{}),children:[C.jsx(ll,{index:!0,element:C.jsx(Ov,{})}),C.jsx(ll,{path:"*",element:C.jsx("p",{children:"Not Found"})})]})})})}$o.createRoot(document.getElementById("root")).render(C.jsx(ya.StrictMode,{children:C.jsx(sm,{basename:"/SoftRyzen-test",children:C.jsx(jv,{})})}));export{Qf as C,K as P,C as j,ee as n,ze as s};
+`,zv=()=>C.jsxs(Nv,{children:[C.jsx(Rv,{}),C.jsx(Lv,{children:C.jsx(R.Suspense,{fallback:C.jsx("div",{children:"Loading..."}),children:C.jsx(lm,{})})})]}),Ov=R.lazy(()=>fm(()=>import("./MainPage-RNj0gabj.js"),__vite__mapDeps([])));function jv(){return C.jsx(nv,{theme:rv,children:C.jsx(im,{children:C.jsxs(ll,{path:"/",element:C.jsx(zv,{}),children:[C.jsx(ll,{index:!0,element:C.jsx(Ov,{})}),C.jsx(ll,{path:"*",element:C.jsx("p",{children:"Not Found"})})]})})})}$o.createRoot(document.getElementById("root")).render(C.jsx(ya.StrictMode,{children:C.jsx(sm,{basename:"/SoftRyzen-test",children:C.jsx(jv,{})})}));export{Qf as C,K as P,C as j,ee as n,R as r,ze as s};
 function __vite__mapDeps(indexes) {
   if (!__vite__mapDeps.viteFileDeps) {
     __vite__mapDeps.viteFileDeps = []
