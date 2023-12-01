@@ -1,5 +1,6 @@
 import Container from "../Container/Container.jsx";
 import SectionTitle from "../SectionTitle/SectionTitle.jsx";
+import ValuesGallery from "../ValuesGallery/ValuesGallery.jsx";
 // import MainBtn from "../MainBtn/MainBtn.jsx";
 import { Section, Picture, Desc } from "./AboutSection.styled.js";
 
@@ -37,6 +38,7 @@ const AboutSection = () => {
           way in innovative technologies that harness the power of nature to
           meet the world's energy needs.
         </Desc>
+        <ValuesGallery />
       </Container>
     </Section>
   );

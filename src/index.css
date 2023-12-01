@@ -12,7 +12,7 @@ body {
   background: #F3F5FA;
   color: #173D33;
   font-weight: 400;
-  /* line-height: var(--line-height); */
+  line-height: 1.2;
 }
 
 code {
