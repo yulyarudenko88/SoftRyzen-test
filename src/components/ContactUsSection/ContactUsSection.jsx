@@ -1,14 +1,15 @@
 import Container from "../Container/Container.jsx";
 import SectionTitle from "../SectionTitle/SectionTitle.jsx";
 import Networks from "../Networks/Networks.jsx";
-import MainBtn from "../MainBtn/MainBtn.jsx";
+import ContactForm from "../ContactForm/ContactForm.jsx";
 import {
   Section,
   ContactsList,
   ItemTitle,
   TelList,
   TelNumber,
-  ContactWrap, Contact, Form, FildWrap, Label, Input, Textarea
+  ContactWrap,
+  Contact,
 } from "./ContactUsSection.styled.js";
 import sprite from "../../assets/images/sprite.svg";
 
@@ -63,35 +64,10 @@ const ContactUsSection = () => {
           </Contact>
           <Contact>
             <ItemTitle>Social Networks:</ItemTitle>
-            <Networks gap='32px'/>
+            <Networks gap="32px" />
           </Contact>
         </ContactsList>
-        <Form>
-          <FildWrap>
-            <Label>
-              * Full name:
-              <Input type="text" name="name" required placeholder="John Rosie"/>
-            </Label>
-          </FildWrap>
-          <FildWrap>
-            <Label>
-              * E-mail:
-              <Input type="email" name="email" required placeholder="johnrosie@gmail.com"/>
-            </Label>
-          </FildWrap>
-          <FildWrap>
-            <Label>
-              * Phone:
-              <Input type="tel" name="phone" required placeholder="380961234567"/>
-            </Label>
-          </FildWrap>
-
-          <Label>
-            Message
-            <Textarea name="message" placeholder="Your message"></Textarea>
-          </Label>
-          <MainBtn type='submit'>Send</MainBtn>
-        </Form>
+        <ContactForm />
       </Container>
     </Section>
   );
