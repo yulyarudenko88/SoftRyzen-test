@@ -5,6 +5,10 @@ export const Item = styled.li`
   border-top: ${({ theme }) => theme.borders.primaryLine};
 
   &:not(:last-child) {
+    div {
+      margin-bottom: 16px;
+    }
+
     p {
       padding-bottom: 16px;
     }
@@ -15,7 +19,6 @@ export const Wrap = styled.div`
   display: flex;
   align-items: center;
   gap: 8px;
-  margin-bottom: 16px;
 `;
 
 export const Btn = styled.button`
