@@ -1,6 +1,6 @@
 import Container from "../Container/Container.jsx";
 import SectionTitle from "../SectionTitle/SectionTitle.jsx";
-// import FAQList from "../FAQList/FAQList.jsx";
+import Networks from "../Networks/Networks.jsx";
 // import SecondaryBtn from "../SecondaryBtn/SecondaryBtn.jsx";
 import {
   Section,
@@ -63,6 +63,7 @@ const ContactUsSection = () => {
           </li>
           <li>
             <ItemTitle>Social Networks:</ItemTitle>
+            <Networks gap='32px'/>
           </li>
         </ContactsList>
         <form>

@@ -8,8 +8,8 @@ export const NetworksList = styled.ul`
 
 export const NetworkRef = styled.a`
   svg {
-    fill: ${({ theme }) => theme.colors.whiteColor};
-    stroke: ${({ theme }) => theme.colors.whiteColor};
+    fill: ${(props) => props.fill};
+    stroke: ${(props) => props.stroke};
     transition: ${({ theme }) => theme.transforms.all};
   }
 
@@ -20,11 +20,4 @@ export const NetworkRef = styled.a`
       stroke: ${({ theme }) => theme.colors.accentColor};
     }
   }
-`;
-
-export const Wrapper = styled.div`
-  display: flex;
-  height: calc(100% - 40px);
-  justify-content: space-between;
-  flex-direction: column;
 `;
