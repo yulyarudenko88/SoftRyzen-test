@@ -1,7 +1,7 @@
 <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <defs>
 <symbol id="icon-go-contact" viewBox="0 0 30 32">
-<path fill="#97d28b" style="fill: var(--color1, #97d28b)" d="M29.867 16c0 8.247-6.686 14.933-14.933 14.933s-14.933-6.686-14.933-14.933c0-8.247 6.686-14.933 14.933-14.933s14.933 6.686 14.933 14.933z"></path>
+<path  d="M29.867 16c0 8.247-6.686 14.933-14.933 14.933s-14.933-6.686-14.933-14.933c0-8.247 6.686-14.933 14.933-14.933s14.933 6.686 14.933 14.933z"></path>
 <path fill="none" stroke="#173d33" style="stroke: var(--color2, #173d33)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.7784" d="M19.789 17.728l-4.856 4.316-4.856-4.316"></path>
 <path fill="none" stroke="#173d33" style="stroke: var(--color2, #173d33)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.7784" d="M14.932 9.956v11.968"></path>
 </symbol>
