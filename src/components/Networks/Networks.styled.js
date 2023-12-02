@@ -3,6 +3,7 @@ import styled from "@emotion/styled";
 export const NetworksList = styled.ul`
   display: flex;
   align-items: center;
+  justify-content: ${(props) => props.justifyContent};
   gap: ${(props) => props.gap};
 `;
 

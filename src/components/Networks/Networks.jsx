@@ -2,9 +2,9 @@ import PropTypes from "prop-types";
 import sprite from "../../assets/images/sprite.svg";
 import { NetworksList, NetworkRef } from "./Networks.styled.js";
 
-const Networks = ({ gap = "8px" }) => {
+const Networks = ({ gap = "8px", justifyContent='flex-start' }) => {
   return (
-    <NetworksList gap={gap}>
+    <NetworksList gap={gap} justifyContent={justifyContent}>
       <li>
         <NetworkRef href="#">
           <svg width={24} height={24}>
@@ -25,6 +25,7 @@ const Networks = ({ gap = "8px" }) => {
 
 Networks.propTypes = {
   gap: PropTypes.string,
+  justifyContent: PropTypes.string,
 };
 
 export default Networks;
