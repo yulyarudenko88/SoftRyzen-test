@@ -6,10 +6,18 @@ export const Section = styled.section`
 
 export const ContactsList = styled.ul`
   margin-top: 24px;
-  margin-bottom:36px;
+  margin-bottom: 36px;
+`;
 
-  li:not(:last-child) {
+export const Contact = styled.li`
+  &:not(:last-child) {
     margin-bottom: 24px;
+  }
+
+  &:last-child {
+    ul {
+      padding-left: 14px;
+    }
   }
 `;
 
@@ -19,7 +27,7 @@ export const ItemTitle = styled.h4`
   line-height: 1.1875;
   letter-spacing: -0.64px;
   text-align: justify;
-  margin-bottom:8px;
+  margin-bottom: 8px;
 `;
 
 export const TelList = styled.ul`
@@ -29,25 +37,25 @@ export const TelList = styled.ul`
 `;
 
 export const TelNumber = styled.li`
-display: flex;
-align-items: center;
-gap: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 
-a {
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: -0.8px;
-}
+  a {
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: -0.8px;
+  }
 `;
 
 export const ContactWrap = styled.div`
-display: flex;
-align-items: center;
-gap: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 
-a {
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: -0.8px;
-}
+  a {
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: -0.8px;
+  }
 `;

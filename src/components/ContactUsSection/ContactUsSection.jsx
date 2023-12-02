@@ -8,7 +8,7 @@ import {
   ItemTitle,
   TelList,
   TelNumber,
-  ContactWrap,
+  ContactWrap, Contact
 } from "./ContactUsSection.styled.js";
 import sprite from "../../assets/images/sprite.svg";
 
@@ -18,7 +18,7 @@ const ContactUsSection = () => {
       <Container>
         <SectionTitle textAlign="center">Contact us</SectionTitle>
         <ContactsList>
-          <li>
+          <Contact>
             <ItemTitle>Phone:</ItemTitle>
             <TelList>
               <TelNumber>
@@ -34,8 +34,8 @@ const ContactUsSection = () => {
                 <a href="tel:+38 (093) 12 34 567">38 (093) 12 34 567</a>
               </TelNumber>
             </TelList>
-          </li>
-          <li>
+          </Contact>
+          <Contact>
             <ItemTitle>E-mail:</ItemTitle>
             <ContactWrap>
               <svg width={24} height={24}>
@@ -43,8 +43,8 @@ const ContactUsSection = () => {
               </svg>
               <a href="mailto:office@ecosolution.com">office@ecosolution.com</a>
             </ContactWrap>
-          </li>
-          <li>
+          </Contact>
+          <Contact>
             <ItemTitle>Address:</ItemTitle>
             <ContactWrap>
               <svg width={24} height={24}>
@@ -60,11 +60,11 @@ const ContactUsSection = () => {
                 </a>
               </address>
             </ContactWrap>
-          </li>
-          <li>
+          </Contact>
+          <Contact>
             <ItemTitle>Social Networks:</ItemTitle>
             <Networks gap='32px'/>
-          </li>
+          </Contact>
         </ContactsList>
         <form>
           <div>

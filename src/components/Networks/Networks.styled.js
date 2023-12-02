@@ -8,8 +8,8 @@ export const NetworksList = styled.ul`
 
 export const NetworkRef = styled.a`
   svg {
-    fill: ${(props) => props.fill};
-    stroke: ${(props) => props.stroke};
+    fill: ${({ theme }) => theme.colors.primaryColor};
+    stroke: ${({ theme }) => theme.colors.primaryColor};
     transition: ${({ theme }) => theme.transforms.all};
   }
 
