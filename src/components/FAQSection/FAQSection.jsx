@@ -1,17 +1,16 @@
 import Container from "../Container/Container.jsx";
 import SectionTitle from "../SectionTitle/SectionTitle.jsx";
 import FAQList from "../FAQList/FAQList.jsx";
-// import MainBtn from "../MainBtn/MainBtn.jsx";
-// import { Section, Picture, Desc } from "./AboutSection.styled.js";
+import { Section } from "./FAQSection.styled.js";
 
 const FAQSection = () => {
   return (
-    <section>
+    <Section>
       <Container>
       <SectionTitle>Frequently Asked Questions</SectionTitle>
       <FAQList />
       </Container>
-    </section>
+    </Section>
   );
 };
 
