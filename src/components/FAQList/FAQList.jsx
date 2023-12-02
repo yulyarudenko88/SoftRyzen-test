@@ -1,49 +1,27 @@
 import { useState } from "react";
-import PropTypes from "prop-types";
-import sprite from "../../assets/images/sprite.svg";
-import { questionsData } from "../../assets/data/questions.js";
+import FAQItem from "../FAQItem/FAQItem.jsx";
+import { questions } from "../../assets/data/questions.js";
 
-const FAQItem = ({ question, answer }) => {
-  const [isOpen, setIsOpen] = useState(false);
+const FAQList = () => {
+  const [openQuestionIndex, setOpenQuestionIndex] = useState(0);
 
-  const toggleAnswer = () => {
-    setIsOpen(!isOpen);
+  const toggleAnswer = (index) => {
+    setOpenQuestionIndex(index === openQuestionIndex ? null : index);
   };
 
   return (
-    <li key={question.slice(0, 10)}>
-      <div>
-        <button type="button" onClick={toggleAnswer} aria-label="Toggle answer">
-          {isOpen ? (
-            <svg width={16} height={16}>
-              <use href={`${sprite}#icon-minus`}></use>
-            </svg>
-          ) : (
-            <svg width={16} height={16}>
-              <use href={`${sprite}#icon-add`}></use>
-            </svg>
-          )}
-        </button>
-        <p>{question}</p>
-      </div>
-      {isOpen && <p>{answer}</p>}
-    </li>
-  );
-};
-
-const FAQList = () => {
-  return (
     <ul>
-      {questionsData.map(({ question, answer, index }) => (
-        <FAQItem key={index} question={question} answer={answer} />
+      {questions.map(({ question, answer }, index) => (
+        <FAQItem
+          key={question.slice(0, 10)}
+          question={question}
+          answer={answer}
+          isOpen={index === openQuestionIndex}
+          toggleAnswer={() => toggleAnswer(index)}
+        />
       ))}
     </ul>
   );
-};
-
-FAQItem.propTypes = {
-  question: PropTypes.string.isRequired,
-  answer: PropTypes.string.isRequired,
 };
 
 export default FAQList;

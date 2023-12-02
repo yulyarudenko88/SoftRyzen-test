@@ -77,7 +77,7 @@
 <path fill="none"  stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8824" d="M7.517 23.541l14.934-14.934"></path>
 </symbol>
 <symbol id="icon-minus" viewBox="0 0 32 32">
-<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="3" d="M8 16h16"></path>
+<path fill="none" stroke="#97d28b" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="3" d="M8 16h16"></path>
 </symbol>
 <symbol id="icon-add" viewBox="0 0 32 32">
 <path fill="none" stroke="#97d28b" style="stroke: var(--color1, #97d28b)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="3" d="M8 16h16"></path>
