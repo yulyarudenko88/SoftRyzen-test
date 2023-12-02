@@ -1,6 +1,13 @@
-import Container from "../Container/Container.jsx";
-import MainBtn from "../MainBtn/MainBtn.jsx";
-import { Section, Wrapper, MainHeader, Desc, AddressList, AddressLink } from "./MainSection.styled.js";
+import Container from '../Container/Container.jsx';
+import MainBtn from '../MainBtn/MainBtn.jsx';
+import {
+  Section,
+  Wrapper,
+  MainHeader,DescWrap,
+  Desc,
+  AddressList,
+  AddressLink,
+} from './MainSection.styled.js';
 
 const MainSection = () => {
   return (
@@ -8,12 +15,14 @@ const MainSection = () => {
       <Container>
         <Wrapper>
           <MainHeader>RENEWABLE ENERGY For any task</MainHeader>
-          <Desc>
-            Development and implementation of renewable non-polluting energy
-            sources, generating power generation using energy wind, sun, water,
-            biomass
-          </Desc>
-          <MainBtn type="button">Learn more</MainBtn>
+          <DescWrap>
+            <Desc>
+              Development and implementation of renewable non-polluting energy
+              sources, generating power generation using energy wind, sun,
+              water, biomass
+            </Desc>
+            <MainBtn type="button">Learn more</MainBtn>
+          </DescWrap>
         </Wrapper>
         <address>
           <AddressList>
@@ -27,7 +36,9 @@ const MainSection = () => {
               </AddressLink>
             </li>
             <li>
-              <AddressLink href="mailto:office@ecosolution.com">office@ecosolution.com</AddressLink>
+              <AddressLink href="mailto:office@ecosolution.com">
+                office@ecosolution.com
+              </AddressLink>
             </li>
           </AddressList>
         </address>
