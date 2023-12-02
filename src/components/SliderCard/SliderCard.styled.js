@@ -1,7 +1,8 @@
 import styled from "@emotion/styled";
 
 export const Thumb = styled.div`
-  padding: 24px 12px;
+  padding: 24px 12px;  
+  background-color: ${({ theme }) => theme.colors.secondaryBGColor};
 `;
 
 export const TitleWrap = styled.div`

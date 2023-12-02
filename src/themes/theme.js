@@ -11,6 +11,8 @@ const theme = {
     backdropColor: "rgba(23, 61, 51, 0.25)",
     primaryTextColor: "#173D33",
     secondaryTextColor: "rgba(255, 255, 255, 0.25)",
+    placeholderColor: "#BDBDBD",
+
   },
 
   transforms: {
