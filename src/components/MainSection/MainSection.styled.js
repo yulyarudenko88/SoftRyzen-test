@@ -14,18 +14,21 @@ export const Section = styled.section`
 
 export const Wrapper = styled.div`
   padding-bottom: 24px;
-  margin-bottom: 24px;
   border-bottom: ${({ theme }) => theme.borders.primaryLine};
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 24px;
+  }
 
   @media screen and (min-width: 768px) {
     display: flex;
     gap: 66px;
-    margin-bottom: 16px;
+    /* margin-bottom: 16px; */
   }
 
   @media screen and (min-width: 1280px) {
     gap: 296px;
-    margin-bottom: 12px;
+    /* margin-bottom: 12px; */
   }
 `;
 
@@ -74,21 +77,52 @@ export const Desc = styled.p`
   }
 `;
 
-export const AddressList = styled.ul`
+export const InfoList = styled.ul`
+  margin-top: 24px;
+
   @media screen and (max-width: 767px) {
     text-align: center;
+  }
 
-    li:not(:last-child) {
-      margin-bottom: 8px;
-    }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    margin-top: 16px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-top: 12px;
   }
 `;
 
-export const AddressLink = styled.a`
+export const InfoLink = styled.li`
   font-size: 16px;
   font-weight: ${({ theme }) => theme.fontWeights.regular};
-  line-height: 1;
+  line-height: 1.1875;
   letter-spacing: -0.64px;
 
-  margin-bottom: 24px;
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 8px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    &:first-child {
+      margin-right: 78px;
+    }
+
+    &:last-child {
+      margin-left: auto;
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    &:first-child {
+      margin-right: auto;
+    }
+
+    &:last-child {
+      margin-left: 152px;
+    }
+  }
 `;
