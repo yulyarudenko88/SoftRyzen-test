@@ -1,4 +1,5 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
+import PropTypes from 'prop-types';
 import sprite from "../../assets/images/sprite.svg";
 import Container from "../Container/Container.jsx";
 import Logo from "../Logo/Logo.jsx";
@@ -7,29 +8,8 @@ import SecondaryBtn from "../SecondaryBtn/SecondaryBtn.jsx";
 import Menu from "../Menu/Menu.jsx";
 import { StyledHeader, Wrap, BtnWrap } from "./Header.styled.js";
 
-const Header = () => {
+const Header = ({isMobile}) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    if (window.innerWidth >= 768) {
-      setIsMobile(true);
-    } else {
-      setIsMobile(false);
-    }
-
-    const updateMedia = () => {
-      if (window.innerWidth >= 768) {
-        setIsMobile(true);
-      } else {
-        setIsMobile(false);
-      }
-    };
-
-    window.addEventListener('resize', updateMedia);
-
-    return () => window.removeEventListener('resize', updateMedia);
-  }, []);
 
   const handleToggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -56,6 +36,10 @@ const Header = () => {
       {isMenuOpen && <Menu isOpen={isMenuOpen} onClose={handleToggleMenu} />}
     </StyledHeader>
   );
+};
+
+Header.propTypes = {
+  isMobile: PropTypes.bool.isRequired,
 };
 
 export default Header;

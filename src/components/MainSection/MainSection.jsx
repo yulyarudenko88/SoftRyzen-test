@@ -47,7 +47,7 @@ const MainSection = ({ isMobile }) => {
 };
 
 MainSection.propTypes = {
-  isMobile: PropTypes.node.isRequired,
+  isMobile: PropTypes.bool.isRequired,
 };
 
 export default MainSection;

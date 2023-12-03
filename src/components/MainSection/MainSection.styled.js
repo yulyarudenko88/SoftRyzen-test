@@ -107,21 +107,21 @@ export const InfoLink = styled.li`
   }
 
   @media screen and (min-width: 768px) {
-    &:first-child {
+    &:first-of-type {
       margin-right: 78px;
     }
 
-    &:last-child {
+    &:last-of-type {
       margin-left: auto;
     }
   }
 
   @media screen and (min-width: 1280px) {
-    &:first-child {
+    &:first-of-type {
       margin-right: auto;
     }
 
-    &:last-child {
+    &:last-of-type {
       margin-left: 152px;
     }
   }

@@ -8,6 +8,7 @@ import ContactUsSection from '../../components/ContactUsSection/ContactUsSection
 
 const MainPage = () => {
   const [isMobile, setIsMobile] = useState(false);
+  const [isDesktop, setIsDesktop] = useState(false);
 
   useEffect(() => {
     if (window.innerWidth >= 768) {
@@ -16,11 +17,23 @@ const MainPage = () => {
       setIsMobile(false);
     }
 
+    if (window.innerWidth >= 1280) {
+      setIsDesktop(true);
+    } else {
+      setIsDesktop(false);
+    }
+
     const updateMedia = () => {
       if (window.innerWidth >= 768) {
         setIsMobile(true);
       } else {
         setIsMobile(false);
+      }
+
+      if (window.innerWidth >= 1280) {
+        setIsDesktop(true);
+      } else {
+        setIsDesktop(false);
       }
     };
 
@@ -32,7 +45,7 @@ const MainPage = () => {
   return (
     <>
       <MainSection isMobile={isMobile} />
-      <AboutSection />
+      <AboutSection isMobile={isMobile} isDesktop={isDesktop} />
       <ElectricitySection />
       <CasesSection />
       <FAQSection />

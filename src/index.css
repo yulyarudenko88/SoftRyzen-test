@@ -9,8 +9,8 @@ body {
   font-family: 'Fira Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #F3F5FA;
-  color: #173D33;
+  background: #f3f5fa;
+  color: #173d33;
   font-weight: 400;
   line-height: 1.2;
 }
@@ -41,7 +41,8 @@ ol {
 }
 
 img,
-svg {
+svg,
+picture {
   display: block;
   max-width: 100%;
   height: auto;
