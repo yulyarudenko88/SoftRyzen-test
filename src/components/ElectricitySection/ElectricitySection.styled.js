@@ -1,12 +1,25 @@
-import styled from "@emotion/styled";
-import SectionTitle from "../SectionTitle/SectionTitle.jsx";
+import styled from '@emotion/styled';
 
 export const Section = styled.section`
   padding-top: 36px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 100px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-top: 120px;
+  }
 `;
 
-export const Title = styled(SectionTitle)`
-  text-align: center;
+export const TitleWrap = styled.div`
+  @media screen and (min-width: 768px) {
+    padding: 0px 170px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding: 0px 375px;
+  }
 `;
 
 export const Counter = styled.p`
@@ -34,7 +47,7 @@ export const Counter = styled.p`
   }
 
   &::before {
-    content: "";
+    content: '';
     position: absolute;
     top: 24px;
     left: 50%;
@@ -42,5 +55,34 @@ export const Counter = styled.p`
     width: 1px;
     height: 48px;
     background-color: ${({ theme }) => theme.colors.accentColor};
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 100px;
+    gap: 24px;
+    padding-top: 135px;
+
+    span {
+      font-size: 28px;
+      line-height: 1.71;
+    }
+
+    &::before {
+      height: 87px;
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 164px;
+    padding-top: 120px;
+
+    span {
+      font-size: 48px;
+      line-height: 1;
+    }
+
+    &::before {
+      top: 16px;
+    }
   }
 `;

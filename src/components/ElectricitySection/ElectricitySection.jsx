@@ -1,9 +1,12 @@
-import { useState, useEffect } from "react";
-import Container from "../Container/Container.jsx";
-import SectionTitle from "../SectionTitle/SectionTitle.jsx";
-import { Section, Counter } from "./ElectricitySection.styled.js";
+import { useState, useEffect } from 'react';
+import Container from '../Container/Container.jsx';
+import SectionTitle from '../SectionTitle/SectionTitle.jsx';
+import {
+  Section,
+  Counter,TitleWrap,
+} from './ElectricitySection.styled.js';
 
-const storedCount = localStorage.getItem("electricityCount");
+const storedCount = localStorage.getItem('electricityCount');
 const initialCount = storedCount ? parseInt(storedCount, 10) : 1134147814;
 
 const ElectricitySection = () => {
@@ -12,9 +15,9 @@ const ElectricitySection = () => {
   useEffect(() => {
     // increasing counter every second and writing counter value to local storage
     const intervalId = setInterval(() => {
-      setCounter((prevCount) => {
+      setCounter(prevCount => {
         const newCount = prevCount + 1;
-        localStorage.setItem("electricityCount", newCount.toString());
+        localStorage.setItem('electricityCount', newCount.toString());
         return newCount;
       });
     }, 50000);
@@ -25,10 +28,10 @@ const ElectricitySection = () => {
 
   return (
     <Section>
-      <Container>
-        <SectionTitle textAlign="center">
+      <Container>        
+        <TitleWrap><SectionTitle textAlign="center">
           Electricity we produced for all time
-        </SectionTitle>
+        </SectionTitle></TitleWrap>
         <Counter>
           {counter.toLocaleString()}
           <span>kWh</span>
