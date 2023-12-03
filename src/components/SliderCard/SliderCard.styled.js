@@ -1,6 +1,10 @@
 import styled from '@emotion/styled';
 import { Link } from 'react-router-dom';
 
+export const Img = styled.img`
+  width: 100%;
+`;
+
 export const Thumb = styled.div`
   padding: 24px 12px;
   background-color: ${({ theme }) => theme.colors.secondaryBGColor};

@@ -2,6 +2,7 @@ import PropTypes from 'prop-types';
 import { useLocation } from 'react-router-dom';
 import RoundBtn from '../RoundBtn/RoundBtn.jsx';
 import {
+  Img,
   Thumb,
   TitleWrap,
   Title,
@@ -16,7 +17,7 @@ const SliderCard = ({ src, srcRetina, title, shortDesc, time }) => {
   return (
     <li>
       <StyledLink to="/" state={location}>
-        <img src={src} srcSet={`${src}, ${srcRetina} 2x`} alt={title} />
+        <Img src={src} srcSet={`${src}, ${srcRetina} 2x`} alt={title} />
         <Thumb>
           <TitleWrap>
             <Title>{title}</Title>
