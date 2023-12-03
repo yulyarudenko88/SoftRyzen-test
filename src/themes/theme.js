@@ -12,7 +12,7 @@ const theme = {
     primaryTextColor: "#173D33",
     secondaryTextColor: "rgba(255, 255, 255, 0.25)",
     placeholderColor: "#BDBDBD",
-
+    indicatorsColor: "rgba(23, 61, 51, 0.25)",
   },
 
   transforms: {
@@ -34,22 +34,6 @@ const theme = {
     medium: 500,
     bold: 700,
   },
-
-  // fontSizes: {
-  //   8: 8,
-  //   10: 10,
-  //   12: 12,
-  //   14: 14,
-  //   16: 16,
-  //   18: 18,
-  //   24: 24,
-  //   28: 28,
-  //   32: 32,
-  //   44: 44,
-  //   60: 60,
-  //   72: 72,
-  //   100: 100,
-  // },
 
   borders: {
     primaryLine: "1px solid #97D28B",

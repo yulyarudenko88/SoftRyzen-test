@@ -1,7 +1,8 @@
-import styled from "@emotion/styled";
+import styled from '@emotion/styled';
+import { Link } from 'react-router-dom';
 
 export const Thumb = styled.div`
-  padding: 24px 12px;  
+  padding: 24px 12px;
   background-color: ${({ theme }) => theme.colors.secondaryBGColor};
 `;
 
@@ -12,19 +13,6 @@ export const TitleWrap = styled.div`
   padding-bottom: 21px;
   margin-bottom: 12px;
   border-bottom: ${({ theme }) => theme.borders.primaryLine};
-
-  svg {
-    stroke: ${({ theme }) => theme.colors.primaryColor};
-    transition: ${({ theme }) =>
-      `stroke ${theme.transforms.transitionDuration} ${theme.transforms.timingFunction}`};
-  }
-
-  button:hover,
-  button:focus {
-    svg {
-      stroke: ${({ theme }) => theme.colors.accentColor};
-    }
-  }
 `;
 
 export const Title = styled.h3`
@@ -44,5 +32,24 @@ export const DescWrap = styled.div`
     font-size: 12px;
     line-height: 1.167;
     letter-spacing: -0.48px;
+  }
+`;
+
+export const StyledLink = styled(Link)`
+  svg {
+    stroke: ${({ theme }) => theme.colors.primaryColor};
+    transition: ${({ theme }) =>
+      `stroke ${theme.transforms.transitionDuration} ${theme.transforms.timingFunction}`};
+  }
+
+  &:hover,
+  &:focus {
+    button,
+    button {
+      svg {
+        stroke: ${({ theme }) => theme.colors.accentColor};
+      }
+      background-color: ${({ theme }) => theme.colors.primaryColor};
+    }
   }
 `;

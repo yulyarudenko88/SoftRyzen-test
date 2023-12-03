@@ -83,5 +83,13 @@
 <path fill="none" stroke="#97d28b" style="stroke: var(--color1, #97d28b)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="3" d="M8 16h16"></path>
 <path fill="none" stroke="#97d28b" style="stroke: var(--color1, #97d28b)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="3" d="M16 24v-16"></path>
 </symbol>
+<symbol id="icon-arrow-left-slide" viewBox="0 0 32 32">
+<path fill="none" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.3333" d="M12.76 7.905l-8.093 8.093 8.093 8.093"></path>
+<path fill="none" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.3333" d="M27.332 15.999h-22.44"></path>
+</symbol>
+<symbol id="icon-arrow-right-slide" viewBox="0 0 30 32">
+<path fill="none" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8824" d="M18.108 8.382l7.617 7.617-7.617 7.617"></path>
+<path fill="none" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8824" d="M4.392 16h21.12"></path>
+</symbol>
 </defs>
 </svg>

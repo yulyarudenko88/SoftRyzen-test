@@ -18,7 +18,7 @@ const RoundBtn = ({
     paddingRight: "12px",
   },
   bgColor = "#DCEFD8",
-  border = "0px",
+  border = "0px solid",
   borderColor = "transparent",
 
   hoverStyles = { styleFirst: "background-color" },
