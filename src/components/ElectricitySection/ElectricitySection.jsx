@@ -17,7 +17,7 @@ const ElectricitySection = () => {
         localStorage.setItem('electricityCount', newCount.toString());
         return newCount;
       });
-    }, 50000);
+    }, 1000);
 
     //clearing interval when component unmount
     return () => clearInterval(intervalId);
