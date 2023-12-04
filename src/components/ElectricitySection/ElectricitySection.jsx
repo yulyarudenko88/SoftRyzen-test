@@ -32,7 +32,7 @@ const ElectricitySection = () => {
           </SectionTitle>
         </TitleWrap>
         <Counter>
-          {counter.toLocaleString()}
+          {counter.toString().replace(/\B(?=(\d{3})+(?!\d))/g, '.')}
           <span>kWh</span>
         </Counter>
       </Container>
