@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import { Link } from 'react-scroll';
 import { useState, useLayoutEffect, useRef } from 'react';
 import Container from '../Container/Container.jsx';
 import SectionTitle from '../SectionTitle/SectionTitle.jsx';
@@ -39,7 +40,6 @@ const FAQSection = ({ isMobile }) => {
   const handleInfoWrapperHeightChange = () => {
     if (infoWrapperRef.current) {
       const height = infoWrapperRef.current.getBoundingClientRect().height;
-      // console.log(height)
       setInfoWrapperHeight(height);
     }
   };
@@ -58,7 +58,9 @@ const FAQSection = ({ isMobile }) => {
             )}
             <div>
               <Question>Didn't find the answer to your question?</Question>
-              <SecondaryBtn>Contact Us</SecondaryBtn>
+              <Link to="contact" smooth={true} duration={500}>
+                <SecondaryBtn>Contact Us</SecondaryBtn>
+              </Link>
             </div>
           </InfoWrapper>
           {isMobile && (

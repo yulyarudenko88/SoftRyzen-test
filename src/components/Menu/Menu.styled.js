@@ -1,4 +1,5 @@
 import styled from "@emotion/styled";
+import { Link } from 'react-scroll';
 
 export const Backdrop = styled.div`
   position: fixed;
@@ -75,7 +76,7 @@ export const NavMenuItem = styled.li`
   }
 `;
 
-export const NavMenuRef = styled.a`
+export const NavMenuRef = styled(Link)`
   display: flex;
   align-items: center;
   color: ${({ theme }) => theme.colors.secondaryTextColor};
@@ -83,6 +84,7 @@ export const NavMenuRef = styled.a`
   font-size: 24px;
   line-height: 1;
   letter-spacing: -0.96px;
+  cursor: pointer;
 
   transition: ${({ theme }) =>
     `color ${theme.transforms.transitionDuration} ${theme.transforms.timingFunction}`};

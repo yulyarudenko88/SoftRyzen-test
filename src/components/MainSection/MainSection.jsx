@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import { Link } from 'react-scroll';
 import Container from '../Container/Container.jsx';
 import MainBtn from '../MainBtn/MainBtn.jsx';
 import {
@@ -6,7 +7,9 @@ import {
   Wrapper,
   MainHeader,
   DescWrap,
-  Desc,InfoList,InfoLink
+  Desc,
+  InfoList,
+  InfoLink,
 } from './MainSection.styled.js';
 
 const MainSection = ({ isMobile }) => {
@@ -21,7 +24,9 @@ const MainSection = ({ isMobile }) => {
               sources, generating power generation using energy wind, sun,
               water, biomass
             </Desc>
-            <MainBtn type="button">Learn more</MainBtn>
+            <Link to="cases" smooth={true} duration={500}>
+              <MainBtn type="button">Learn more</MainBtn>
+            </Link>
           </DescWrap>
         </Wrapper>
         <InfoList>
@@ -40,7 +45,7 @@ const MainSection = ({ isMobile }) => {
             <a href="mailto:office@ecosolution.com">office@ecosolution.com</a>
           </InfoLink>
           {isMobile && <InfoLink>ecosolution &#169; 2023</InfoLink>}
-        </InfoList>          
+        </InfoList>
       </Container>
     </Section>
   );

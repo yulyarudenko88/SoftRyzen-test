@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import { Link } from 'react-scroll';
 import sprite from '../../assets/images/sprite.svg';
 import Container from '../Container/Container.jsx';
 import Logo from '../Logo/Logo.jsx';
@@ -20,23 +21,25 @@ const Footer = ({ isMobile }) => {
           <Logo />
           <Wrap>
             {isMobile && <Networks justifyContent="center" />}
-            <RoundBtn
-              type="button"
-              SvgWidth={16}
-              SvgHeight={16}
-              spritePath={sprite}
-              iconName="icon-arrow-up"
-              width="32px"
-              height="32px"
-              padding={{
-                paddingTop: '8px',
-                paddingBottom: '8px',
-                paddingLeft: '8px',
-                paddingRight: '8px',
-              }}
-              bgColor="#97D28B"
-              hoverParams={{ paramFirst: '#173D33' }}
-            />
+            <Link to="main" smooth={true} duration={500}>
+              <RoundBtn
+                type="button"
+                SvgWidth={16}
+                SvgHeight={16}
+                spritePath={sprite}
+                iconName="icon-arrow-up"
+                width="32px"
+                height="32px"
+                padding={{
+                  paddingTop: '8px',
+                  paddingBottom: '8px',
+                  paddingLeft: '8px',
+                  paddingRight: '8px',
+                }}
+                bgColor="#97D28B"
+                hoverParams={{ paramFirst: '#173D33' }}
+              />
+            </Link>
           </Wrap>
         </LogoWrap>
         {!isMobile && <Networks justifyContent="center" />}

@@ -63,3 +63,7 @@ address {
   display: block;
   font-style: normal;
 }
+
+html, body {
+  scroll-behavior: auto;
+}

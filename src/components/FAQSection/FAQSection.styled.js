@@ -51,7 +51,6 @@ export const InfoWrapper = styled.div`
     justify-content: space-between;
     height: ${prop => {
       const height = prop.infoWrapperHeight;
-      console.log(`${height}px`);
       return `${height}px`;
     }};
   }
