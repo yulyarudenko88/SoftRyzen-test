@@ -1,35 +1,45 @@
+import PropTypes from 'prop-types';
 import sprite from '../../assets/images/sprite.svg';
 import Container from '../Container/Container.jsx';
 import Logo from '../Logo/Logo.jsx';
 import RoundBtn from '../RoundBtn/RoundBtn.jsx';
 import Networks from '../Networks/Networks.jsx';
-import { StyledFooter, LogoWrap, InfoList, InfoLink } from './Footer.styled.js';
+import {
+  StyledFooter,
+  LogoWrap,
+  InfoList,
+  InfoLink,
+  Wrap,
+} from './Footer.styled.js';
 
-const Footer = () => {
+const Footer = ({ isMobile }) => {
   return (
     <StyledFooter>
       <Container>
         <LogoWrap>
           <Logo />
-          <RoundBtn
-            type="button"
-            SvgWidth={16}
-            SvgHeight={16}
-            spritePath={sprite}
-            iconName="icon-arrow-up"
-            width="32px"
-            height="32px"
-            padding={{
-              paddingTop: '8px',
-              paddingBottom: '8px',
-              paddingLeft: '8px',
-              paddingRight: '8px',
-            }}
-            bgColor="#97D28B"
-            hoverParams={{ paramFirst: '#173D33' }}
-          />
+          <Wrap>
+            {isMobile && <Networks justifyContent="center" />}
+            <RoundBtn
+              type="button"
+              SvgWidth={16}
+              SvgHeight={16}
+              spritePath={sprite}
+              iconName="icon-arrow-up"
+              width="32px"
+              height="32px"
+              padding={{
+                paddingTop: '8px',
+                paddingBottom: '8px',
+                paddingLeft: '8px',
+                paddingRight: '8px',
+              }}
+              bgColor="#97D28B"
+              hoverParams={{ paramFirst: '#173D33' }}
+            />
+          </Wrap>
         </LogoWrap>
-        <Networks justifyContent="center" />
+        {!isMobile && <Networks justifyContent="center" />}
         <InfoList>
           <InfoLink>
             <address>
@@ -50,6 +60,10 @@ const Footer = () => {
       </Container>
     </StyledFooter>
   );
+};
+
+Footer.propTypes = {
+  isMobile: PropTypes.bool.isRequired,
 };
 
 export default Footer;

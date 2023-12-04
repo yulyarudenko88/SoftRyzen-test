@@ -1,4 +1,4 @@
-import styled from "@emotion/styled";
+import styled from '@emotion/styled';
 
 export const Form = styled.form`
   padding: 36px 12px;
@@ -7,6 +7,23 @@ export const Form = styled.form`
   button {
     margin-top: 16px;
     margin-left: auto;
+  }
+
+  @media screen and (max-width: 767px) {
+    max-width: 440px;
+  }
+
+  @media screen and (min-width: 768px) {
+    flex: 0 0 342px;
+    padding: 36px 24px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    flex: 0 0 596px;
+    padding: 48px;
+    button {
+      margin-top: 32px;
+    }
   }
 `;
 
@@ -25,10 +42,14 @@ export const Label = styled.label`
   transition: ${({ theme }) =>
     `color ${theme.transforms.transitionDuration} ${theme.transforms.timingFunction}`};
 
-  /* &:hover,
+  &:hover,
   &:focus {
     color: ${({ theme }) => theme.colors.accentColor};
-  } */
+  }
+
+  @media screen and (min-width: 1280px) {
+    gap: 12px;
+  }
 `;
 
 export const Input = styled.input`
@@ -49,10 +70,21 @@ export const Input = styled.input`
     color: ${({ theme }) => theme.colors.placeholderColor};
     line-height: 1.22;
     letter-spacing: -0.72px;
+    @media screen and (min-width: 1280px) {
+      font-size: 20px;
+      line-height: 1.2;
+      letter-spacing: -0.8px;
+    }
   }
 
   &:-webkit-autofill {
     transition: background-color 6000s;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: -0.8px;
   }
 `;
 
@@ -76,9 +108,21 @@ export const Textarea = styled.textarea`
     color: ${({ theme }) => theme.colors.placeholderColor};
     line-height: 1.22;
     letter-spacing: -0.72px;
+    @media screen and (min-width: 1280px) {
+      font-size: 20px;
+      line-height: 1.2;
+      letter-spacing: -0.8px;
+    }
   }
 
   &:-webkit-autofill {
     transition: background-color 6000s;
+  }
+
+  @media screen and (min-width: 1280px) {
+    height: 149px;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: -0.8px;
   }
 `;

@@ -36,7 +36,7 @@ const SharedLayout = () => {
           <Outlet />
         </Suspense>
       </Main>
-      <Footer />
+      <Footer isMobile={isMobile}/>
     </Wrapper>
   );
 };

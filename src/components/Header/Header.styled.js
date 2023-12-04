@@ -8,6 +8,7 @@ export const StyledHeader = styled.header`
   background-color: ${({ theme }) => theme.colors.headerBGColor};
   padding-top: 36px;
   padding-bottom: 36px;
+  z-index: 100;
 `;
 
 export const Wrap = styled.div`

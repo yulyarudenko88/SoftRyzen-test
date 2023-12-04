@@ -1,14 +1,45 @@
-import styled from "@emotion/styled";
+import styled from '@emotion/styled';
 
 export const Section = styled.section`
   padding-top: 36px;
   padding-bottom: 36px;
   border-bottom: ${({ theme }) => theme.borders.primaryLine};
+
+  @media screen and (min-width: 768px) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
 `;
 
+export const Wrapper = styled.div`
+  @media screen and (min-width: 768px) {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-top: 120px;
+  }
+`;
 export const ContactsList = styled.ul`
-  margin-top: 24px;
-  margin-bottom: 36px;
+  @media screen and (max-width: 767px) {
+    margin-top: 24px;
+    margin-bottom: 36px;
+  }
+
+  @media screen and (min-width: 768px) {
+    flex: 0 0 250px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    flex: 0 0 470px;
+  }
 `;
 
 export const Contact = styled.li`
@@ -16,9 +47,22 @@ export const Contact = styled.li`
     margin-bottom: 24px;
   }
 
-  &:last-child {
-    ul {
-      padding-left: 14px;
+  @media screen and (max-width: 1279px) {
+    &:last-child {
+      ul {
+        padding-left: 12px;
+      }
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    &:not(:last-child) {
+      margin-bottom: 32px;
+    }
+    &:last-child {
+      ul {
+        gap: 8px;
+      }
     }
   }
 `;
@@ -30,6 +74,10 @@ export const ItemTitle = styled.h4`
   letter-spacing: -0.64px;
   text-align: justify;
   margin-bottom: 8px;
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 16px;
+  }
 `;
 
 export const TelList = styled.ul`
@@ -41,106 +89,63 @@ export const TelList = styled.ul`
 export const TelNumber = styled.li`
   display: flex;
   align-items: center;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
   gap: 8px;
 
   a {
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: -0.8px;
+
+    @media screen and (min-width: 1280px) {
+      font-size: 24px;
+      letter-spacing: -0.96px;
+    }
+  }
+
+  svg {
+    stroke: ${({ theme }) => theme.colors.primaryColor};
+    transition: ${({ theme }) => theme.transforms.all};
+  }
+
+  a:hover + svg,
+  a:focus + svg {
+    stroke: ${({ theme }) => theme.colors.accentColor};
   }
 `;
 
 export const ContactWrap = styled.div`
   display: flex;
   align-items: center;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
   gap: 8px;
 
   a {
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: -0.8px;
-  }
-`;
 
-export const Form = styled.form`
-  padding: 36px 12px;
-  background-color: ${({ theme }) => theme.colors.secondaryBGColor};
-
-  button {
-    margin-top: 16px;
-    margin-left: auto;
-  }
-`;
-
-export const FildWrap = styled.div`
-  margin-bottom: 28px;
-`;
-
-export const Label = styled.label`
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-
-  font-size: 16px;
-  line-height: 1.1875;
-  letter-spacing: -0.64px;
-  transition: ${({ theme }) =>
-    `color ${theme.transforms.transitionDuration} ${theme.transforms.timingFunction}`};
-
-  /* &:hover,
-  &:focus {
-    color: ${({ theme }) => theme.colors.accentColor};
-  } */
-`;
-
-export const Input = styled.input`
-  font-family: inherit;
-  font-size: 18px;
-  color: ${({ theme }) => theme.colors.primaryTextColor};
-  line-height: 1.1875;
-  letter-spacing: -0.72px;
-  outline: none;
-  border: none;
-  padding: 0px 0px 8px 0px;
-  width: 100%;
-  background-color: transparent;
-  border-bottom: ${({ theme }) => theme.borders.primaryLine};
-
-  &::placeholder {
-    font-size: 18px;
-    color: ${({ theme }) => theme.colors.placeholderColor};
-    line-height: 1.22;
-    letter-spacing: -0.72px;
+    @media screen and (min-width: 1280px) {
+      font-size: 24px;
+      letter-spacing: -0.96px;
+    }
   }
 
-  &:-webkit-autofill {
-    transition: background-color 6000s;
-  }
-`;
-
-export const Textarea = styled.textarea`
-  font-family: inherit;
-  font-size: 18px;
-  color: ${({ theme }) => theme.colors.primaryTextColor};
-  line-height: 1.1875;
-  letter-spacing: -0.72px;
-  outline: none;
-  border: none;
-  padding: 0px 0px 8px 0px;
-  width: 100%;
-  height: 147px;
-  resize: none;
-  background-color: transparent;
-  border-bottom: ${({ theme }) => theme.borders.primaryLine};
-
-  &::placeholder {
-    font-size: 18px;
-    color: ${({ theme }) => theme.colors.placeholderColor};
-    line-height: 1.22;
-    letter-spacing: -0.72px;
+  svg {
+    stroke: ${({ theme }) => theme.colors.primaryColor};
+    transition: ${({ theme }) => theme.transforms.all};
   }
 
-  &:-webkit-autofill {
-    transition: background-color 6000s;
+  address + svg {
+    flex: 0 0 24px;
+  }
+
+  a:hover + svg,
+  a:hover + svg,
+  address:hover + svg,
+  address:hover + svg {
+    stroke: ${({ theme }) => theme.colors.accentColor};
   }
 `;

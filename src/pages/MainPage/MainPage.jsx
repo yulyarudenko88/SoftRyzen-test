@@ -47,8 +47,8 @@ const MainPage = () => {
       <MainSection isMobile={isMobile} />
       <AboutSection isMobile={isMobile} isDesktop={isDesktop} />
       <ElectricitySection />
-      <CasesSection isMobile={isMobile} isDesktop={isDesktop}/>
-      <FAQSection />
+      <CasesSection isMobile={isMobile} isDesktop={isDesktop} />
+      <FAQSection isMobile={isMobile} />
       <ContactUsSection />
     </>
   );
