@@ -3,9 +3,26 @@ import styled from '@emotion/styled';
 export const Section = styled.section`
   padding-top: 36px;
 
-  /* @media screen and (min-width: 768px) and (max-width: 1279px) {
-    padding-top: 40px;
-  } */
+  @media screen and (min-width: 768px) {
+    padding-top: 100px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-top: 120px;
+  }
+`;
+
+export const Wrapper = styled.div`
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 39px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-bottom: 120px;
+  }
 `;
 
 export const TitleWrap = styled.div`
@@ -13,22 +30,32 @@ export const TitleWrap = styled.div`
   h2 {
     flex: 0 0 264px;
   }
-  /* @media screen and (min-width: 768px) {
-    padding: 0px 170px;
-  }
 
   @media screen and (min-width: 1280px) {
-    padding: 0px 375px;
-  } */
+    h2 {
+      flex: 0 0 400px;
+    }
+  }
 `;
 
 export const IndicatorsWrap = styled.div`
+  display: flex;
+  align-items: flex-end;
+
   @media screen and (max-width: 767px) {
-    display: flex;
     justify-content: space-between;
-    align-items: flex-end;
     margin-top: 24px;
-    margin-bottom: 19px;
+    margin-bottom: 26px;
+  }
+  @media screen and (min-width: 768px) {
+    gap: 126px;
+    padding-left: 9px;
+    border-left: ${({ theme }) => theme.borders.primaryLine};
+  }
+
+  @media screen and (min-width: 1280px) {
+    gap: 193px;
+    padding-left: 161px;
   }
 `;
 
@@ -46,7 +73,6 @@ export const Indicators = styled.p`
 export const ButtonsWrap = styled.div`
   display: flex;
   gap: 12px;
-  padding-bottom: 7px;
 
   button {
     svg {
@@ -60,5 +86,9 @@ export const ButtonsWrap = styled.div`
         stroke: ${({ theme }) => theme.colors.accentColor};
       }
     }
+  }
+
+  @media screen and (min-width: 1280px) {
+    gap: 24px;
   }
 `;

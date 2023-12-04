@@ -24,8 +24,6 @@ const theme = {
   fontFamilies: {
     paragraphsFontFamily: "Fira Sans, sans-serif",
     headersFontFamily: "Oswald, sans-serif",
-    logoFontFamily: "Montserrat, sans-serif",
-    logoSpanFontFamily: "Raleway, sans-serif",
   },
 
   fontWeights: {

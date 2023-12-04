@@ -12,6 +12,10 @@ export const Picture = styled.picture`
   display: block;
   margin-bottom: 36px;
 
+  img{
+    width: 100%;
+  }
+  
   @media screen and (min-width: 768px) {
     margin-bottom: 101px;
   }
