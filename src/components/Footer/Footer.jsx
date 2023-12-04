@@ -24,6 +24,7 @@ const Footer = ({ isMobile }) => {
             <Link to="main" smooth={true} duration={500}>
               <RoundBtn
                 type="button"
+                aria-label='go to main section'
                 SvgWidth={16}
                 SvgHeight={16}
                 spritePath={sprite}

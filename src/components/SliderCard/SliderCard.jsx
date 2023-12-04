@@ -22,6 +22,7 @@ const SliderCard = ({ src, srcRetina, title, shortDesc, time }) => {
             <Title>{title}</Title>
             <RoundBtn
               type="button"
+              aria-label='go to project'
               SvgWidth={28}
               SvgHeight={28}
               spritePath={sprite}

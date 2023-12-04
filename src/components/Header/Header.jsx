@@ -37,6 +37,7 @@ const Header = ({ isMobile }) => {
           <BtnWrap>
             <RoundBtn
               type="button"
+              aria-label='open burger-menu'
               SvgWidth={16}
               SvgHeight={16}
               spritePath={sprite}

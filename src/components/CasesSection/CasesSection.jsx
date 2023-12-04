@@ -68,6 +68,7 @@ const CasesSection = ({ isMobile, isDesktop }) => {
             <ButtonsWrap>
               <RoundBtn
                 type="button"
+                aria-label='go to prev slide'
                 onClick={goToPreviousSlide}
                 SvgWidth={36}
                 SvgHeight={36}
@@ -97,6 +98,7 @@ const CasesSection = ({ isMobile, isDesktop }) => {
               />
               <RoundBtn
                 type="button"
+                aria-label='go to next slide'
                 onClick={goToNextSlide}
                 SvgWidth={36}
                 SvgHeight={36}
