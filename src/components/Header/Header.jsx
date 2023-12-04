@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Link } from 'react-scroll';
 import PropTypes from 'prop-types';
 import sprite from '../../assets/images/sprite.svg';
@@ -11,13 +11,26 @@ import { StyledHeader, Wrap, BtnWrap } from './Header.styled.js';
 
 const Header = ({ isMobile }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isAtTop, setIsAtTop] = useState(true);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrolledToTop = window.scrollY === 0;
+      setIsAtTop(scrolledToTop);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   const handleToggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
   return (
-    <StyledHeader>
+    <StyledHeader isAtTop={isAtTop}>
       <Container>
         <Wrap>
           <Logo />

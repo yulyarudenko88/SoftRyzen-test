@@ -5,7 +5,8 @@ export const StyledHeader = styled.header`
   top: 0;
   left: 0;
   width: 100%;
-  background-color: ${({ theme }) => theme.colors.headerBGColor};
+  background-color: ${({ theme, isAtTop }) =>
+    isAtTop ? 'transparent' : theme.colors.headerBGColor};
   padding-top: 36px;
   padding-bottom: 36px;
   z-index: 100;
