@@ -13,7 +13,7 @@ import DesktopWindTurbineRetina from '../../assets/images/AboutSection/desktop_w
 
 const AboutSection = ({ isMobile, isDesktop }) => {
   return (
-    <Section>
+    <Section id="about">
       <Container>
         <Picture>
           <source

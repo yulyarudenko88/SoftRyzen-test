@@ -11,7 +11,7 @@ import {
 
 const MainSection = ({ isMobile }) => {
   return (
-    <Section>
+    <Section id="main">
       <Container>
         <Wrapper>
           <MainHeader>RENEWABLE ENERGY For any task</MainHeader>

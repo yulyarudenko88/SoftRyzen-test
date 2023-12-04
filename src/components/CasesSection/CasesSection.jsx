@@ -48,10 +48,9 @@ const CasesSection = ({ isMobile, isDesktop }) => {
     setCurrentSlide(prevSlide => (prevSlide + 1) % slides.length);
   };
   return (
-    <Section>
+    <Section id="cases">
       <Container>
         <Wrapper>
-          {' '}
           <TitleWrap>
             <SectionTitle>Successful cases of our company</SectionTitle>
           </TitleWrap>

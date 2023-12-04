@@ -15,7 +15,7 @@ import sprite from '../../assets/images/sprite.svg';
 
 const ContactUsSection = () => {
   return (
-    <Section>
+    <Section id="contact">
       <Container>
         <SectionTitle textAlign="center">Contact us</SectionTitle>
         <Wrapper>

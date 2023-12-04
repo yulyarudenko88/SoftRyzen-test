@@ -45,7 +45,7 @@ const FAQSection = ({ isMobile }) => {
   };
 
   return (
-    <Section>
+    <Section id="faq">
       <Container>
         <ContentWrapper ref={infoWrapperRef}>
           <InfoWrapper infoWrapperHeight={infoWrapperHeight}>

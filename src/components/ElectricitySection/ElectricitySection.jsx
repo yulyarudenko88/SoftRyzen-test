@@ -1,10 +1,7 @@
 import { useState, useEffect } from 'react';
 import Container from '../Container/Container.jsx';
 import SectionTitle from '../SectionTitle/SectionTitle.jsx';
-import {
-  Section,
-  Counter,TitleWrap,
-} from './ElectricitySection.styled.js';
+import { Section, Counter, TitleWrap } from './ElectricitySection.styled.js';
 
 const storedCount = localStorage.getItem('electricityCount');
 const initialCount = storedCount ? parseInt(storedCount, 10) : 1134147814;
@@ -27,11 +24,13 @@ const ElectricitySection = () => {
   }, []);
 
   return (
-    <Section>
-      <Container>        
-        <TitleWrap><SectionTitle textAlign="center">
-          Electricity we produced for all time
-        </SectionTitle></TitleWrap>
+    <Section id="electricity">
+      <Container>
+        <TitleWrap>
+          <SectionTitle textAlign="center">
+            Electricity we produced for all time
+          </SectionTitle>
+        </TitleWrap>
         <Counter>
           {counter.toLocaleString()}
           <span>kWh</span>
