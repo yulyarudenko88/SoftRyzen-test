@@ -47,6 +47,9 @@ export const GalleryItem = styled.li`
     picture {
       display: flex;
       height: 100%;
+      img {
+        width: 100%;
+      }
     }
   }
 
