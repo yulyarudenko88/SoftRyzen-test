@@ -35,17 +35,13 @@ export const Label = styled.label`
   display: flex;
   flex-direction: column;
   gap: 8px;
+  position: relative;
 
   font-size: 16px;
   line-height: 1.1875;
   letter-spacing: -0.64px;
   transition: ${({ theme }) =>
     `color ${theme.transforms.transitionDuration} ${theme.transforms.timingFunction}`};
-
-  &:hover,
-  &:focus {
-    color: ${({ theme }) => theme.colors.accentColor};
-  }
 
   @media screen and (min-width: 1280px) {
     gap: 12px;
@@ -63,7 +59,9 @@ export const Input = styled.input`
   padding: 0px 0px 8px 0px;
   width: 100%;
   background-color: transparent;
-  border-bottom: ${({ theme }) => theme.borders.primaryLine};
+  border-bottom: ${({ theme, errors }) =>
+    errors ? `1px solid ${theme.colors.errorColor}` : theme.borders.primaryLine};
+
 
   &::placeholder {
     font-size: 18px;
@@ -125,4 +123,20 @@ export const Textarea = styled.textarea`
     line-height: 1.2;
     letter-spacing: -0.8px;
   }
+`;
+
+export const ErrorMessage = styled.div`
+position: absolute;
+right: 0;
+    bottom: -8px;
+    transform: translateY(100%);
+
+  font-size: 12px;
+  color: ${({ theme }) => theme.colors.errorColor};
+  line-height: 1.167;
+  letter-spacing: -0.48px;
+ 
+  // @media screen and (min-width: 1280px) {
+  //   gap: 12px;
+  // }
 `;

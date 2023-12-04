@@ -13,6 +13,7 @@ const theme = {
     secondaryTextColor: "rgba(255, 255, 255, 0.25)",
     placeholderColor: "#BDBDBD",
     indicatorsColor: "rgba(23, 61, 51, 0.25)",
+    errorColor: "#D28B8B",
   },
 
   transforms: {
