@@ -1,4 +1,4 @@
-# !<img src="./public/favicon.svg" alt="Ecosolution - RENEWABLE ENERGY For any task!" width="30" height="16"> Ecosolution - RENEWABLE ENERGY For any task!
+# <img src="./public/favicon.svg" alt="Ecosolution - RENEWABLE ENERGY For any task!" width="36" height="36"> Ecosolution - RENEWABLE ENERGY For any task!
 
 ## Description:
 Ecosolution is fully responsive design, oriented to any device (mobile, tablet, desktop).
