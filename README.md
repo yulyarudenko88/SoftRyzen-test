@@ -1,8 +1,27 @@
-# React + Vite
+# ![Image alt](./public/favicon.svg) Ecosolution - RENEWABLE ENERGY For any task!
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description:
+Ecosolution is fully responsive design, oriented to any device (mobile, tablet, desktop).
+This app offers development and implementation of renewable non-polluting energy sources, generating power generation using energy wind, sun, water, biomass.
+Ecosolution [Live page](https://yulyarudenko88.github.io/SoftRyzen-test/).
 
-Currently, two official plugins are available:
+<span>
+<img src="./public/ecosolution.png" width="400" height="400" title="main page">
+</span>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Features:
+ You can view the values ​​that guide our team (`"About section"`), projects that have been successfully implemented in recent years (`"Cases section"`), contact us to discuss your ideas further (`"Contact Us section"`) or view the answers to the questions we receive most often (`"FAQ section"`), maybe your solution is already there.
+
+### Technologies Used:
+- **HTML/CSS** 
+- **JavaScript** 
+- **React** 
+- **React-router-dom** 
+- **React-loader-spinner** 
+- **Formiks** 
+- **Yup** 
+- **Emotion**
+- **React-responsive-carousel**
+- **React-scroll**
+
+Github repository: [https://github.com/yulyarudenko88/SoftRyzen-test/tree/main](https://github.com/yulyarudenko88/SoftRyzen-test/tree/main)
