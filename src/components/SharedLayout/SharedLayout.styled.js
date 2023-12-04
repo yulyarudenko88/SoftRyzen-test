@@ -9,3 +9,10 @@ export const Wrapper = styled.div`
 export const Main = styled.main`
   flex: 1 1 auto;
 `;
+
+export const LoaderWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 250px;
+`;

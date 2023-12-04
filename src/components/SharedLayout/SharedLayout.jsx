@@ -1,9 +1,10 @@
 import { useState, useEffect } from 'react';
-import { Outlet } from "react-router-dom";
-import { Suspense } from "react";
-import Header from "../Header/Header";
+import { Outlet } from 'react-router-dom';
+import { Suspense } from 'react';
+import Header from '../Header/Header';
 import Footer from '../Footer/Footer.jsx';
-import { Wrapper, Main } from "./SharedLayout.styled";
+import { InfinitySpin } from 'react-loader-spinner';
+import { Wrapper, Main, LoaderWrapper } from './SharedLayout.styled';
 
 const SharedLayout = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -30,13 +31,19 @@ const SharedLayout = () => {
 
   return (
     <Wrapper>
-      <Header  isMobile={isMobile}/>
+      <Header isMobile={isMobile} />
       <Main>
-        <Suspense fallback={<div>Loading...</div>}>
+        <Suspense
+          fallback={
+            <LoaderWrapper>
+              <InfinitySpin width="200" color="#97D28B" />
+            </LoaderWrapper>
+          }
+        >
           <Outlet />
         </Suspense>
       </Main>
-      <Footer isMobile={isMobile}/>
+      <Footer isMobile={isMobile} />
     </Wrapper>
   );
 };
